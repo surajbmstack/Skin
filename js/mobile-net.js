@@ -20,7 +20,7 @@ async function loadFile() {
   document.getElementById("select-file-box").style.display = "table-cell";
   document.getElementById("predict-box").style.display = "table-cell";
   document.getElementById("prediction").innerHTML =
-    "Click predict to find the type of Skin Cancer!";
+    "Click predict to find the type of Skin Lesion!";
   var fileInputElement = document.getElementById("select-file-image");
   console.log(fileInputElement.files[0]);
   renderImage(fileInputElement.files[0]);
@@ -180,7 +180,7 @@ function preprocessImage(image, modelName) {
 function loadDemoImage() {
   document.getElementById("predict-box").style.display = "table-cell";
   document.getElementById("prediction").innerHTML =
-    "Click predict to find the type of Skin Cancer!";
+    "Click predict to find the type of Skin Lesion!";
   document.getElementById("select-file-box").style.display = "table-cell";
   document.getElementById("predict-list").innerHTML = "";
 
